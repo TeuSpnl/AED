@@ -1,0 +1,17 @@
+[33mcommit 80c22d44caff6eda06308cb8ad6ada5e845e93a8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Spínola <teu_almeida20010@hotmail.com>
+Date:   Fri Mar 11 11:39:07 2022 -0300
+
+    Adição da fila incompleta
+
+[33mcommit f9eb629444e2909187fa377df2dc873ae899f2ed[m
+Author: Spínola <teu_almeida20010@hotmail.com>
+Date:   Fri Mar 11 10:43:16 2022 -0300
+
+    Consertando erros, completando pilha e adicionando Expression incompleto.
+
+[33mcommit d1f20f196cc645a4c76c38c205e111e6aa2da318[m[33m ([m[1;32mPilhas[m[33m, [m[1;32mListaEncadeadaDupla[m[33m, [m[1;32mListaDupla[m[33m, [m[1;32mFigura[m[33m)[m
+Author: Spínola <teu_almeida20010@hotmail.com>
+Date:   Fri Mar 4 12:20:32 2022 -0300
+
+    primeiro commit
