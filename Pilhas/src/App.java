@@ -2,9 +2,9 @@ import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Pilha p = new PilhaEncadeada();
-        p.push(5);
+        String strIn = "5+6";
+        String strOut = Expression.infixToPosFix(strIn);
 
-        System.out.println(p.getTop());
+        JOptionPane.showMessageDialog(null, strOut);
     }
 }

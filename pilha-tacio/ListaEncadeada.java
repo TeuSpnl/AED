@@ -4,8 +4,8 @@ public class ListaEncadeada {
 
   public final class Element {
 
-    Object data;
-    Element next;
+    private Object data;
+    private Element next;
 
     Element(Object d, Element n) {
       data = d;
@@ -39,6 +39,7 @@ public class ListaEncadeada {
 
   public Object getPrimeiro() throws ListaVaziaException {
     if (head == null) throw new ListaVaziaException();
+
     return head.data;
   }
 
@@ -57,7 +58,6 @@ public class ListaEncadeada {
       prevPtr = ptr;
       ptr = ptr.next;
     }
-
     if (ptr == head) {
       head = ptr.next;
     } else {
