@@ -1,5 +1,5 @@
 public class Cilindro extends Circulo {
-    double altura, area, volume;
+    public double altura, area, volume;
 
 
     public Cilindro() {}

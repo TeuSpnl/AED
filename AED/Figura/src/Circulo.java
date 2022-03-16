@@ -1,6 +1,6 @@
 public class Circulo extends Ponto {
 
-    private double raio, area;
+    public double raio, area;
 
     public Circulo() {}
 

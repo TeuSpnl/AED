@@ -20,6 +20,8 @@ public class Teste {
         c1.setRaio(raio);
         cil1.setAltura(h);
 
+        JOptionPane.showMessageDialog(null, p1.toString());
+        JOptionPane.showMessageDialog(null, c1.toString());
         JOptionPane.showMessageDialog(null, cil1.toString());
     }
 }
