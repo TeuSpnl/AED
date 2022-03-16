@@ -1,12 +1,8 @@
-public class Circulo extends Ponto{
+public class Circulo extends Ponto {
 
     private double raio, area;
 
-
-    public Circulo(double raio) {
-        this.raio = raio;
-    }
-
+    public Circulo() {}
 
     public double getRaio() {
         return this.raio;
@@ -14,15 +10,23 @@ public class Circulo extends Ponto{
 
     public void setRaio(double raio) {
         this.raio = raio;
+        setArea();
     }
 
-    public double area() {
+    public void setArea() {
         this.area = Math.PI * (raio * raio);
-        return area;
+    }
+    
+    public double getArea(){
+        return this.area;        
     }
 
-    public String toString (){
-        return "area";
+    public String toString() {
+        String strArea = String.format("%.2f", getArea());
+
+        return "Centro: " + super.toString() +
+                "\nRaio: " + getRaio() +
+                "\nÁrea: " + strArea;
     }
 
 }

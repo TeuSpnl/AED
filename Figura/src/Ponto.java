@@ -15,7 +15,7 @@ public class Ponto {
     }
 
     public int getX() {
-        return this.x;
+        return x;
     }
 
     public void setX(int x) {
@@ -23,7 +23,7 @@ public class Ponto {
     }
 
     public int getY() {
-        return this.y;
+        return y;
     }
 
     public void setY(int y) {
@@ -31,8 +31,6 @@ public class Ponto {
     }
 
     public String toString() {
-        String res;
-        res = "[" + x + "," + y + "]";
-        return res;
+        return "[" + getX() + "," + getY() + "]";
     }
 }
