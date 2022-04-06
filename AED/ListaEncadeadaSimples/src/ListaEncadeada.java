@@ -119,8 +119,10 @@ public class ListaEncadeada {
         String volta = "";
         Element e = getHead();
 
-        for (int i = 0; i < 10; i++){
-            volta += e.data + "\n";
+        volta += "Objetos adicionados:\n";
+
+        for (int i = 1; i <= 10; i++){
+            volta += "Objeto " + i + ": " + e.data + "\n";
             e = e.next;
         }
         return (volta);
