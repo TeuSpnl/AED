@@ -31,6 +31,7 @@ public class ListaEncadeada {
     public Object getPrimeiro() throws ListaVaziaException {
         if (head == null)
             throw new ListaVaziaException();
+
         return head.data;
     }
 
@@ -114,21 +115,14 @@ public class ListaEncadeada {
     }
 
     @Override
-    public String toString(){
-        String volta = "Object";
+    public String toString() {
+        String volta = "";
+        Element e = getHead();
 
         for (int i = 0; i < 10; i++){
-            try {
-                Object primeiro = getPrimeiro();
-
-                System.out.println(primeiro);
-
-            } catch (ListaVaziaException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            volta += e.data + "\n";
+            e = e.next;
         }
-
-        return(volta);
+        return (volta);
     }
 }
