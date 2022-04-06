@@ -4,6 +4,14 @@ public class Cilindro extends Circulo {
 
     public Cilindro() {}
 
+    public void setRaio(double raio){
+        super.setRaio(raio);
+    }
+
+    public void setPonto(int x, int y){
+        super.setPonto(x, y);
+    }
+
     public double getAltura() {
         return this.altura;
     }
@@ -32,6 +40,6 @@ public class Cilindro extends Circulo {
 
     public String toString(){
         return super.toString() + 
-                "\nVolume: " + getVolume();
+                "\nVolume: " + String.format("%.2f", getVolume());
     }
 }
