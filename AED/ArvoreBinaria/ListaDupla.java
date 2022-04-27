@@ -1,4 +1,4 @@
-public class ListaDupla<T> implements iListaClassificada {
+public class ListaDupla<T>{
 
     private Object[] array;
     private Element<T> head;
