@@ -171,11 +171,22 @@ public class Node<T> {
     return altura_maxima;
   }
 
+  public void codificarLetras(String text) {
+    int[] freq = getFrequencia(text);
+    ListaDupla<Integer> ld = new ListaDupla<Integer>();
+
+    for (int i = 0; i < freq.length; i++) {
+      if (freq[i] != 0) {
+        ld.inserirFim(freq[i]);
+      }
+    }
+  }
+
   public int[] getFrequencia(String text) {
-    int[] freq = new int[255];
-    
+    int[] freq = new int[256];
+    char[] character = new char[text.length()];
+
     for (int i = 0; i < text.length(); i++) {
-      char[] character = new char[text.length()];
       character[i] = text.charAt(i);
 
       freq[(int) character[i]]++;

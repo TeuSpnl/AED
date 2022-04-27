@@ -13,7 +13,7 @@ public class App {
     text = text.toUpperCase();
 
     System.out.println(text);
-    tree.getFrequencia(text);
+    tree.codificarLetras(text);
 
     scan.close();
 

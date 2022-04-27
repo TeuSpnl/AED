@@ -1,9 +1,12 @@
-public class ListaDupla<T> {
+public class ListaDupla<T> implements iListaClassificada {
 
+    private Object[] array;
     private Element<T> head;
+    int count;
 
-    public ListaDupla() {
-        this.fazVazia();
+    public ListaDupla(int tam) {
+        array = new Object[tam];
+        count = 0;
     }
 
     public final class Element<K> {
@@ -11,7 +14,7 @@ public class ListaDupla<T> {
         K data;
         public Element<K> next, prev;
 
-        Element(K data, Element<K> next, Element<K> prev) {
+        public Element(K data, Element<K> next, Element<K> prev) {
             this.data = data;
             this.next = next;
             this.prev = prev;
@@ -80,7 +83,7 @@ public class ListaDupla<T> {
     }
 
     public void inserirInicio(T conteudo) {
-        Element<T> temp = new Element(conteudo, head, head.prev);
+        Element<T> temp = new Element<>(conteudo, head, null);
 
         if (head == null) {
             head = temp;
@@ -94,8 +97,7 @@ public class ListaDupla<T> {
     }
 
     public void inserirFim(T item) {
-
-        Element<T> temp = new Element(item, head, head.prev);
+        Element<T> temp = new Element<T>(item, head, null);
 
         if (head == null) {
             head = temp;
