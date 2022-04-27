@@ -1,30 +1,44 @@
+import java.util.Scanner;
+
 public class App {
 
   public static void main(String[] args) throws Exception {
-    Node<Integer> arvore = new Node<Integer>(6);
+    Node<Integer> tree = new Node<Integer>(6);
+
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite uma frase.");
+
+    String text = scan.nextLine();
+    text = text.toUpperCase();
+
+    System.out.println(text);
+    tree.getFrequencia(text);
+
+    scan.close();
 
     
-    arvore.inserirOrdenado(3);
-    arvore.inserirOrdenado(9);
-    arvore.inserirOrdenado(8);
-    arvore.inserirOrdenado(1);
-    arvore.inserirOrdenado(2);
-    arvore.inserirOrdenado(7);
-    arvore.inserirOrdenado(91);
-    arvore.imprimeInOrdem();
-    System.out.println();
-    arvore.imprimeDesOrdem();
-    System.out.println("\nEm largura: ");
+    // tree.inserirOrdenado(3);
+    // tree.inserirOrdenado(9);
+    // tree.inserirOrdenado(8);
+    // tree.inserirOrdenado(1);
+    // tree.inserirOrdenado(2);
+    // tree.inserirOrdenado(7);
+    // tree.inserirOrdenado(91);
+    // tree.imprimeInOrdem();
+    // System.out.println();
+    // tree.imprimeDesOrdem();
+    // System.out.println("\nEm largura: ");
     
-    FilaEncadeada f = new FilaEncadeada();
+    // FilaEncadeada f = new FilaEncadeada();
 
-    f.enfileirar(arvore);
-    System.out.println("Imprimindo em largura:");
-    arvore.imprimeEmLarguraRecursivo(f);
+    // f.enfileirar(tree);
+    // System.out.println("Imprimindo em largura:");
+    // tree.imprimeEmLarguraRecursivo(f);
     
-    System.out.println("Imprimindo em largura inverso:");
-    arvore.imprimeEmLarguraInverso();
+    // System.out.println("Imprimindo em largura inverso:");
+    // tree.imprimeEmLarguraInverso();
 
-    System.out.println("A altura da árvore é: " + arvore.calculaAltura());
+    // System.out.println("A altura da árvore é: " + tree.calculaAltura());
   }
 }

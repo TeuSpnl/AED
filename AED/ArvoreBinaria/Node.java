@@ -82,19 +82,9 @@ public class Node<T> {
     this.rChild = rChild;
   }
 
-  // pesquisarprofundidadepreordem
-  // pesquisarprofundidadeinordem
-  // pesquisarprofundidadeposordem
-  // pesquisaremLargura
-  // remover
-  // imprimir a arvore: em profundidade preordem
-  // em profundidade posordem
-  // em profundidade inordem
-  // em largura
-
   // calcular o comprimento do caminho entre dois nos
   // calcular altura de um node
-  // verificar se um node eh interno ou externo
+  // verificar se um node é interno ou externo
   // calcular a profundidade de um node
 
   protected void imprimeEmLarguraRecursivo(iFila f) {
@@ -179,5 +169,18 @@ public class Node<T> {
 
     }
     return altura_maxima;
+  }
+
+  public int[] getFrequencia(String text) {
+    int[] freq = new int[255];
+    
+    for (int i = 0; i < text.length(); i++) {
+      char[] character = new char[text.length()];
+      character[i] = text.charAt(i);
+
+      freq[(int) character[i]]++;
+    }
+
+    return freq;
   }
 }

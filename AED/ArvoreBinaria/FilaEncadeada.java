@@ -1,9 +1,9 @@
 public class FilaEncadeada implements iFila {
-    protected ListaEncadeada lista;
+    protected ListaDupla lista;
     protected int count;
 
     public FilaEncadeada() {
-        lista = new ListaEncadeada();
+        lista = new ListaDupla();
         count = 0;
     }
 
