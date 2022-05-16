@@ -3,7 +3,7 @@ public class FilaEncadeada implements iFila {
     protected int count;
 
     public FilaEncadeada() {
-        lista = new ListaDupla();
+        lista = new ListaDupla<>();
         count = 0;
     }
 
