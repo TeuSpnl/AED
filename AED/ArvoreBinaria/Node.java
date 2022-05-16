@@ -173,7 +173,7 @@ public class Node<T> {
 
   public int[] getFrequencia(String text) {
     int[] freq = new int[255];
-    
+
     for (int i = 0; i < text.length(); i++) {
       char[] character = new char[text.length()];
       character[i] = text.charAt(i);
@@ -183,4 +183,16 @@ public class Node<T> {
 
     return freq;
   }
+
+  // public boolean eAVL(){
+  //   if(-(this.lChild.altura()) + this.rChild.altura() > 1 || -(this.lChild.altura()) + this.rChild.altura() < -1){
+  //     return false;
+  //   }
+  //   else if(this.lChild.eAVL() == false || this.rChild.eAVL() == false){
+  //     return false;
+  //   }
+
+  //   return true;
+  // }
+
 }
