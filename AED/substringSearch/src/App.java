@@ -19,6 +19,7 @@ public class App {
         tStart = System.currentTimeMillis();
 
         int offset = ForcaBruta.FB(pat, txt);
+        
         if (offset == txt.length()) {
             System.out.println("Padrão não encontrado");
         } else {
@@ -38,6 +39,7 @@ public class App {
 
         Kmp kmp = new Kmp(pat);
         offset = kmp.search(txt);
+        
         if (offset == txt.length()) {
             System.out.println("Padrão não encontrado");
         } else {
